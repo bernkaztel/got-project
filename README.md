@@ -17,3 +17,5 @@ A lo largo de nuestra vida, y de manera cotidiana, estamos vinculados y nos rela
 Teniendo todas estas cuestiones en cuenta, se comienza a trabajar en el sitio y crear la experiencia de usuario. La decisión de hacerla app, se tomó para que el usuario tenga la información más accesible y no necesite encender una computadora cada que esté viendo un capítulo o necesite consultar un dato. Otra decisión importante fue concebirla en inglés, porque así abarcamos un público más global.
 
 Las vistas planeadas fueron las siguientes:
+
+![Vistas](assets/images/IMG_7779.jpg)
