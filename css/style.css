@@ -1,0 +1,18 @@
+.nopadding{
+    padding: 0;
+    margin: 0;
+}
+
+.footer{
+    background-color: rgb(71, 71, 83);
+    color: white;
+}
+
+
+.map-image{
+    width: 100%;
+}
+
+.full{
+    background-color: aquamarine
+}

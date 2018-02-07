@@ -1,0 +1,15 @@
+.character-image{
+    width: 20vh;
+    border-radius: 50%;
+}
+
+.imagecontainer{
+    position: relative;
+    text-align: center;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}

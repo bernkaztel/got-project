@@ -1,0 +1,22 @@
+.user{
+    width: 30vh;
+    border-radius: 50%;
+}
+
+.icon-input{
+    font-size: 10px;
+    color: rgb(194, 194, 194);
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+
+.icon-background{
+    background-color: grey;
+    width: 35px; 
+    position: relative;
+}
+
+.input-group-log{
+    width: 100%;
+}

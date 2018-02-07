@@ -1,0 +1,15 @@
+.house-image{
+    width: 28vh;
+    border-radius: 50%;
+}
+
+.imagecontainer{
+    position: relative;
+    text-align: center;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 42%;
+}
