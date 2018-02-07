@@ -1,7 +1,8 @@
 Pencil sketching, Adobe Photoshop.
 
-Objectivo
-El objectivo es demasiado claro, crear una aplicación móvil que permita a los usuarios obtener toda la información sobre Game of Thrones. Dentro de ella se encuentran las siguientes funciones:
+##Objetivo
+
+El objetivo es demasiado claro, crear una aplicación móvil que permita a los usuarios obtener toda la información sobre Game of Thrones. Dentro de ella se encuentran las siguientes funciones:
 
 -    Acceder a la información sobre casas y personajes.
 -    Obtener toda la información sobre los libros publicados.
