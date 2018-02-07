@@ -26,3 +26,8 @@ Las vistas planeadas fueron las siguientes:
 Nuestra planeación:
 
 ![Vistas](assets/images/IMG_7780.JPG)
+
+
+## Avance de maquetado 
+
+https://bernkaztel.github.io/got-project/index.html
