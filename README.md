@@ -18,4 +18,4 @@ Teniendo todas estas cuestiones en cuenta, se comienza a trabajar en el sitio y 
 
 Las vistas planeadas fueron las siguientes:
 
-![Vistas](assets/images/IMG_7779.jpg)
+![Vistas](../assets/images/IMG_7779.JPG)
