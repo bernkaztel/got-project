@@ -1,11 +1,11 @@
 .user{
     width: 50vh;
-    height: auto;
+    height: 50vh;
 }
 
 .icon-input{
     font-size: 10px;
-    color: rgb(194, 194, 194);
+    color: rgb(182, 3, 3);
     position: absolute;
     top: 8px;
     left: 10px;
