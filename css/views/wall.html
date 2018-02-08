@@ -55,163 +55,139 @@
 
     <!-- Comienza contenido gral -->
     <div class="container-fluid no-gutters">
-        <div class="local-nav p-2">
-            <img src="../../assets/images/dummy.png" class="user-local-nav pull-right" alt="">
+
+        <div class="local-nav mt-5">
+            <img src="../../assets/images/Lannister.png" class="banner-local-nav pull-left" alt="">
+            <img src="../../assets/images/dummy.png" class="user-local-nav pull-right p-1" alt="">
         </div>
+
+
     </div>
-    <div class="container">
-        <div class="col">
-            <div class="card mt-5 mb-4" id="main-headig">
-                <div class="card-header">
-                    <ul class="nav nav-tabs card-header-tabs pull-right" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#post" role="tab" aria-controls="post" aria-selected="true">
-                                <i class="fa fa-pencil" aria-hidden="true"></i>
-                                <span class="d-none d-lg-inline-block ">Write a post</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">
-                                <i class="fa fa-book" aria-hidden="true"></i>
-                                <span class="d-none d-lg-inline-block ">Attach a reference</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card-body p-3">
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="post" role="tabpanel" aria-labelledby="post-tab">
-                            <div class="form-group">
-                                <textarea class="form-control" rows="2" id="comment" placeholder="What are your thoughts?"></textarea>
-                                <button class="btn btn-sm btn-purple mt-3 ml-1" type="button" data-toggle="collapse" data-target="#shareImage" aria-expanded="false"
-                                    aria-controls="shareImage">Do you want to attach an image?</button>
-                                <div class="collapse" id="shareImage">
-                                    <input type="file" class="btn-purple" id="files" name="files[]" />
+    <div class="container-fluid">
+        <div class="row mt-10 nopadding">
+            <div class="col nopadding">
+                <div class="card mt-5 mb-4" id="main-headig">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs pull-right" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#post" role="tab" aria-controls="post" aria-selected="true">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    <span class="d-none d-lg-inline-block ">Write a post</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body p-3">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="post" role="tabpanel" aria-labelledby="post-tab">
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="2" id="comment" placeholder="What are your thoughts?"></textarea>
+                                    <button class="btn btn-sm btn-purple mt-3 ml-1" type="button" data-toggle="collapse" data-target="#shareImage" aria-expanded="false"
+                                        aria-controls="shareImage">Do you want to attach an image?</button>
+                                    <div class="collapse" id="shareImage">
+                                        <input type="file" class="btn-purple" id="files" name="files[]" />
+                                    </div>
                                 </div>
-                            </div>
-                            <button class="btn btn-purpleback mt-4 ml-2 mb-1" id="bt-post">Post</button>
-                        </div>
-                        <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
-                            <span class="ml-4 littlefont">Look in here for the character or house you want to make a reference to</span>
-                            <input type="text" id="isbn-input" class="purple-input input-group-lg">
-                            <button class="btn btn-sm btn-purple" type="button" data-toggle="collapse" data-target="#bookInfo" aria-expanded="false"
-                                aria-controls="bookInfo" id="search">Search!</button>
-                            <div class="collapse ml-4 mt-4" id="bookInfo">
-                                <div class="titles text-center mb-3">
-                                    <div id="title" class=" d-inline-block font-weight-bold">The Character</div>
+                                <button class="btn btn-sm btn-purple ml-1 mb-2" type="button" data-toggle="collapse" data-target="#shareHashtag" aria-expanded="false"
+                                    aria-controls="sharHashtage">Do you want to add a #Hashtag</button>
+                                <div class="collapse" id="shareHashtag">
+                                    <input type="text" id="hashtag">
                                 </div>
-                                <img src="#" id="cover" class="pull-left m-4 mb-1">
-                                <div id="description" class="mt-4 m-3 littlefont">The description</div>
+                                <button class="btn btn-purpleback mt-5 ml-2 mb-1" id="bt-post">Post</button>
                             </div>
-                            <div class="form-group">
-                                <textarea class="form-control" rows="5" id="review-comment" placeholder="What are your thoughts?"></textarea>
-                            </div>
-                            <button class="btn btn-purpleback mt-2 ml-4 mb-3" id="post-review">Post</button>
                         </div>
                     </div>
                 </div>
-            </div>
 
 
-            <div id="containerpost">
-                <div class="card border-light mb-3 mt-1" id="readingpost">
-                    <div class="card-body">
-                        <h6 class="card-title">
-                            <h5 class=" font-weight-bold  pl-2 mt-2 pt-3 pr-2 d-inline">User posted:</h5>
-                            <span class="littlefont pull-right  pr-2 text-muted">Just now</span>
-                        </h6>
-                        <div class="card-text d-flex justify-content-start mt-3">
-                            <div class=" d-inline-block">
-                                <img src="assets/images/book7.jpg" class="feed-book p-3 pr-1 pl-3 d-none d-md-block d-lg-block" id="card-cover">
+                <div id="containerpost">
+                    <div class="card mb-3 mt-1s" id="simplepost">
+                        <div class="card-body nopadding p-3">
+                            <h6 class="card-title">
+                                <h5 class=" font-weight-bold  ml-2 mt-2 mr-2 d-inline">Angelina</h5>posteó:
+                                <span class="littlefont pull-right  mr-2 text-muted">Justo ahora</span>
+                            </h6>
+                            <div id="post-description" class="comment mt-4">
+                                Me la pasé leyendo en el café de Manuela que está frente al Parque México. El capuchino estaba delicioso, tienen que ir.
                             </div>
-                            <div class="d-inline-block p-3 pl-4 pr-4">
-                                <h5 class=" font-weight-bold" id="card-title">The character</h5>
-                                <button class="btn btn-purpleback btn-sm" type="button" data-toggle="collapse" data-target="#card-description" aria-expanded="false"
-                                    aria-controls="card-description">See description</button>
-                                <span class="bookresume littlefont collapse" id="card-description">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati, fuga sapiente esse magni dolor, voluptatum eum amet, quibusdam culpa vel deserunt ipsa ad nemo minima est? Consequuntur, modi. Fuga.
-                                </span>
-
-                                <div id="card-review" class="comment d-block mt-4">
-                                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, itaque!
-                                </div>
-                            </div>
+                            <output id="list" class="d-inline"></output>
                         </div>
-                        <div class="card-footer text-muted m-0">
-                            <button class="btn btn-nobackground like">
-                                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                            </button>
-                            <button class="btn btn-nobackground love">
-                                <i class="fa fa-gratipay" aria-hidden="true"></i>
-                            </button>
-                            <div id="comment-section">
-                                <div id="coment-user" class="comments">
-                                    <span class="mt-4 font-weight-bold d-block littlefont">User says:</span>
+                        <div class="card-footer nopadding p-4 text-muted">
+                            <div class="like mb-3">
+                                <button class="btn btn-nobackground like">
+                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                </button>
+                                <button class="btn btn-nobackground love">
+                                    <i class="fa fa-gratipay" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div id="comment-section-post">
+                                <div id="coment-user-post" class="comments p-2">
+                                    <span class=" font-weight-bold d-block littlefont">Ada dice:</span>
                                     <img src="assets/images/profilefriends.png" class=" littleprofile" alt="">
-                                    <span id="comment-text">Lorem ipsum dolor sit amet.</span>
+                                    <span class="littlefont" id="comment-text-post">A mí también me encanta esa cafetería, el café es fantástico.</span>
                                 </div>
                             </div>
-
-                            <div class="form-group">
-                                <label for="comment" class="mt-5 mb-3">Add a commentary:</label>
-                                <textarea class="form-control" rows="1" id="card-comment"></textarea>
-                                <button class="btn btn-sm btn-purpleback mt-3" id="card-submitcomment">Post</button>
+                            <div class="form-group mt-4">
+                                <label for="comment littlefont" class=" mb-2">Añade un comentario:</label>
+                                <textarea class="form-control" rows="1" id="card-comment-post"></textarea>
+                                <button class="btn btn-sm btn-dark mt-3" id="card-submitcomment-post" onclick="postear()">Postear</button>
                             </div>
                         </div>
                     </div>
+</div>
+
                 </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Termina contenido gral -->
+                <!-- Termina contenido gral -->
 
-    <!-- Comienza footer -->
-    <div class="container-fluid footer">
-        <div class="row">
-            <div class="col text-center mt-4">
-                <h4>Game of Thrones</h4>
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col">
-                <span class="font-weight-bold d-block text-center mb-1">LINKS 1</span>
-                <a href="../../index.html" class="d-block text-center">Map</a>
-                <a href="houses.html" class="d-block text-center mb-1">Houses</a>
-                <a href="characters.html" class="d-block text-center mb-1">Characters</a>
-                <a href="shows.html" class="d-block text-center mb-1">Tv-Shows</a>
-                <a href="books.html" class="d-block text-center mb-1">Books</a>
-            </div>
-            <div class="col">
-                <span class="font-weight-bold d-block text-center mb-1">LINKS 2</span>
-                <a href="#" class="d-block text-center mb-1">About us</a>
-                <a href="#" class="d-block text-center mb-1">Contact us</a>
-                <a href="#" class="d-block text-center mb-1">FAQ</a>
-            </div>
-            <div class="col">
-                <span class="font-weight-bold d-block text-center mb-1">LINKS 3</span>
-                <a href="#" class="d-block text-center mb-1">
-                    <i class="fab fa-twitter-square"></i>
-                </a>
-                <a href="#" class="d-block text-center mb-1">
-                    <i class="fab fa-facebook-square"></i>
-                </a>
-                <a href="#" class="d-block text-center mb-1">
-                    <i class="fab fa-instagram"></i>
-                </a>
+                <!-- Comienza footer -->
+                <div class="container-fluid footer">
+                    <div class="row">
+                        <div class="col text-center mt-4">
+                            <h4>Game of Thrones</h4>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <span class="font-weight-bold d-block text-center mb-1">LINKS 1</span>
+                            <a href="../../index.html" class="d-block text-center">Map</a>
+                            <a href="houses.html" class="d-block text-center mb-1">Houses</a>
+                            <a href="characters.html" class="d-block text-center mb-1">Characters</a>
+                            <a href="shows.html" class="d-block text-center mb-1">Tv-Shows</a>
+                            <a href="books.html" class="d-block text-center mb-1">Books</a>
+                        </div>
+                        <div class="col">
+                            <span class="font-weight-bold d-block text-center mb-1">LINKS 2</span>
+                            <a href="#" class="d-block text-center mb-1">About us</a>
+                            <a href="#" class="d-block text-center mb-1">Contact us</a>
+                            <a href="#" class="d-block text-center mb-1">FAQ</a>
+                        </div>
+                        <div class="col">
+                            <span class="font-weight-bold d-block text-center mb-1">LINKS 3</span>
+                            <a href="#" class="d-block text-center mb-1">
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
+                            <a href="#" class="d-block text-center mb-1">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a href="#" class="d-block text-center mb-1">
+                                <i class="fab fa-instagram"></i>
+                            </a>
 
-            </div>
-        </div>
-    </div>
-    <!-- Termina Footer -->
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Termina Footer -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-        crossorigin="anonymous"></script>
-    <script src="../../js/app.js" charset="utf-8"></script>
-    <script src="../../js/wall.js"></script>
+                <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+                    crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+                    crossorigin="anonymous"></script>
+                <script src="../../js/app.js" charset="utf-8"></script>
+                <script src="../../js/wall.js"></script>
 </body>
 
 </html>

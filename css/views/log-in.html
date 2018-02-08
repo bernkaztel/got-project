@@ -51,12 +51,49 @@
     </nav>
     <!-- Termina barra de navegación -->
 
-
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center text-capitalize" id="exampleModalLongTitle">Formulario de registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/newuser.png" class="littlebook img-radius d-block mx-auto" alt="">
+                    <div class="form-group  center-block"></div>
+                    <div class="input-group mt-2 mb-3 m-1">
+                        <div class="input-group-addon">
+                            <i class="fa fa-user">
+                            </i>
+                        </div>
+                        <input class="form-control" id="email" name="name" placeholder="Email" type="text" />
+                    </div>
+                    <div class="input-group mt-2 mb-3 m-1">
+                        <div class="input-group-addon">
+                            <i class="fa fa-user">
+                            </i>
+                        </div>
+                        <input class="form-control" id="password" name="name" placeholder="Contraseña" type="password" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-purple"  onclick="newUser()" data-dismiss="modal">Registrarse</button>
+                    <button type="button" class="btn  btn-sm btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Comienza contenido gral -->
     <div class="container">
+        <div class="row mt-5 d-block mx-auto">
+            <h5 class=" text-center">Register and find out which house you belong in!</h5>
+        </div>
         <div class="row">
-            <img src="../../assets/images/dummy.png" class="user d-block mx-auto mt-4 mb-4" alt="">
+            <img src="../../assets/images/Arryn.png" class="user d-block mx-auto mt-4 mb-4" id="userImage" alt="">
         </div>
         <div class="row">
             <div class="col">
@@ -82,14 +119,25 @@
                     </div>
                     <input id="password_field" type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
-
             </div>
+
         </div>
         <div class="row">
-            <div class="col-8 push-2  mb-3">
+            <div class="col d-inline-block text-center">
                 <button type="button" onclick="login()" class="btn m-1">Log-In</button>
-                <button type="button" onclick="register()" class="btn m-1">Register</button>
+                <button type="button" onclick="register()" data-toggle="modal" data-target="#exampleModalCenter" class="btn m-1">Register</button>
             </div>
+        </div>
+        <div class="row mt-4 mb-3">
+            <div class="col d-block mx-auto">
+                <p class=" text-center">Or sign-in using your google account</p>
+                    <button class="btn d-block mx-auto" onclick="googleSignin()">Google Sign-In</button>
+                </div>
+            </div>
+        <div class="row mb-5 mt-2">
+            <span class=" d-block mx-auto text-muted">Forgot your password?
+                <a href="#">click here</a>
+            </span>
         </div>
     </div>
     <!-- Termina contenido gral -->
@@ -133,7 +181,19 @@
     </div>
     <!-- Termina Footer -->
 
-
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBAz_UDrlmn6eCOlP6AWqMF1UFsEJxmcs4",
+            authDomain: "pgot-94cec.firebaseapp.com",
+            databaseURL: "https://pgot-94cec.firebaseio.com",
+            projectId: "pgot-94cec",
+            storageBucket: "",
+            messagingSenderId: "409515084365"
+        };
+        firebase.initializeApp(config);
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>

@@ -11,6 +11,7 @@
     <link href="../style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="../characters.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -54,109 +55,37 @@
     <!-- Comienza contenido gral -->
     <div class="container">
         <h2 class=" mt-2 mb-2 text-center text-uppercase">Characters</h2>
-        <div class="row">
-            <div class="col imagecontainer mt-3 mb-3">
-                <img src="../../assets/images/dummy.png" alt="" class="img-responsive character-image">
-                <div class="caption">
-                    <span class=" text-muted">Tyron Lannister</span>
-                </div>
-            </div>
-            <div class="col imagecontainer mt-3 mb-3">
-                <img src="../../assets/images/dummy.png" alt="" class="img-responsive character-image">
-                <div class="caption">
-                    <span class=" text-muted">Cersei Lannister</span>
-                </div>
-            </div>
-            <div class="col imagecontainer mt-3 mb-3">
-                <img src="../../assets/images/dummy.png" alt="" class="img-responsive character-image">
-                <div class="caption">
-                    <span class=" text-muted">Jaime Lannister</span>
-                </div>
-            </div>
-            <div class="col imagecontainer mt-3 mb-3">
-                <img src="../../assets/images/dummy.png" alt="" class="img-responsive character-image">
-                <div class="caption">
-                    <span class=" text-muted">Jon Snow</span>
-                </div>
-            </div>
-            <div class="col imagecontainer mt-3 mb-3">
-                <img src="../../assets/images/dummy.png" alt="" class="img-responsive character-image">
-                <div class="caption">
-                    <span class=" text-muted">Arya Stark</span>
-                </div>
-            </div>
-            <div class="col imagecontainer mt-3 mb-3">
-                <img src="../../assets/images/dummy.png" alt="" class="img-responsive character-image">
-                <div class="caption">
-                    <span class=" text-muted">Eddard Stark</span>
-                </div>
-            </div>
-            <div class="col imagecontainer mt-3 mb-3">
-                <img src="../../assets/images/dummy.png" alt="" class="img-responsive character-image">
-                <div class="caption">
-                    <span class=" text-muted">Sansa Stark</span>
-                </div>
-            </div>
-            <div class="col imagecontainer mt-3 mb-3">
-                <img src="../../assets/images/dummy.png" alt="" class="img-responsive character-image">
-                <div class="caption">
-                    <span class=" text-muted">Daenerys Targaryen</span>
-                </div>
-            </div>
-            <div class="col imagecontainer mt-3 mb-3">
-                <img src="../../assets/images/dummy.png" alt="" class="img-responsive character-image">
-                <div class="caption">
-                    <span class=" text-muted">Khal Drogo</span>
-                </div>
-            </div>
-            <div class="col imagecontainer mt-3 mb-3">
-                <img src="../../assets/images/dummy.png" alt="" class="img-responsive character-image">
-                <div class="caption">
-                    <span class=" text-muted">Theon Greyjoy</span>
-                </div>
-            </div>
-            <div class="col imagecontainer mt-3 mb-3">
-                <img src="../../assets/images/dummy.png" alt="" class="img-responsive character-image">
-                <div class="caption">
-                    <span class=" text-muted">Joffrey Baratheon</span>
-                </div>
-            </div>
-            <div class="col imagecontainer mt-3 mb-3">
-                <img src="../../assets/images/dummy.png" alt="" class="img-responsive character-image">
-                <div class="caption">
-                    <span class=" text-muted">Petyr Baelish</span>
-                </div>
-            </div>
-            <div class="col imagecontainer mt-3 mb-3">
-                <img src="../../assets/images/dummy.png" alt="" class="img-responsive character-image">
-                <div class="caption">
-                    <span class=" text-muted">Margaery Tyrell</span>
-                </div>
-            </div>
-            <div class="col imagecontainer mt-3 mb-3">
-                <img src="../../assets/images/dummy.png" alt="" class="img-responsive character-image">
-                <div class="caption">
-                    <span class=" text-muted">Jorah Mormont</span>
-                </div>
-            </div>
-            <div class="col imagecontainer mt-3 mb-3">
-                <img src="../../assets/images/dummy.png" alt="" class="img-responsive character-image">
-                <div class="caption">
-                    <span class=" text-muted">Lord Varys</span>
-                </div>
-            </div>
-            <div class="col imagecontainer mt-3 mb-3">
-                    <img src="../../assets/images/dummy.png" alt="" class="img-responsive character-image">
-                    <div class="caption">
-                        <span class=" text-muted">Loras Tyrell</span>
-                    </div>
-                </div>
+        <div class="row" id="characters-container">
+
+
 
         </div>
     </div>
     <!-- Termina contenido gral -->
 
-
+    <!--Modal template-->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 id="modaltitle" class="restaurantname d-block mx-auto">Jaime Lannister</h3>
+                </div>
+                <div class="modal-body">
+                    <img id="imagemodal" src="#" class=" img-responsive d-block mx-auto modal-img" alt="">
+                    <img id="alliance" src="#" class=" img-responsive d-block mx-auto banner-img-modal" alt="">
+                    <div class="d-block mx-auto">
+                        <span class=" font-weight-bold">Born in:</span>
+                        <span id="born" class=" font-italic">Dirección</span>
+                    </div>
+                    <div class="d-block mx-auto mt-2">
+                        <p id="description" class="d-block mx-auto littlefont description-modal">Dirección</p>
+                    </div>
+                    <button type="button" class="btn btn-default d-block mx-auto btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Comienza footer -->
@@ -207,6 +136,7 @@
         crossorigin="anonymous"></script>
     <script src="../../js/app.js" charset="utf-8"></script>
     <script src="../../js/characters.js"></script>
+    <script src="../../js/dataCharacters.js"></script>
 </body>
 
 </html>

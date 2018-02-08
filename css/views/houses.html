@@ -51,15 +51,40 @@
     </nav>
     <!-- Termina barra de navegación -->
 
-
+<!--Modal template-->
+<div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 id="modaltitle" class="d-block mx-auto">Jaime Lannister</h3>
+                </div>
+                <div class="modal-body mx-auto">
+                    <img id="imagemodal" src="#" class=" img-responsive d-block mx-auto modal-img" alt="">
+                    <div class="d-block mx-auto">
+                        <span id="word" class=" font-italic">Dirección</span>
+                    </div>
+                    <div class="d-block mx-auto">
+                            <span class="font-weight-bold">Located in:</span>
+                            <span id="region" class=" font-italic">Dirección</span>
+                        </div>
+                    <div class="d-block mx-auto mt-2">
+                        <p id="description" class="d-block mx-auto littlefont description-modal">Dirección</p>
+                    </div>
+                    <button type="button" class="btn btn-default d-block mx-auto btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Comienza contenido gral -->
     <div class="container">
-        <h2 class=" mt-2 mb-2 text-center text-uppercase">Houses</h2>
+            <input type="text" id="searchHouses" onkeyup="search()" placeholder="Search for names..">
+        <!-- <h2 class=" mt-2 mb-2 text-center text-uppercase">Houses</h2> -->
         <div class="row" id="houses-container">
-        
-            
-           
+
+
+
         </div>
     </div>
     <!-- Termina contenido gral -->

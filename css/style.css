@@ -1,8 +1,19 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: #252525;
+    font-family: 'Open Sans', sans-serif;
+    color: #252525;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Cinzel', serif;
+    color: white;
+}
+
+.modal-header{
+    background-color: #252525;
+}
 .nopadding{
     padding: 0;
     margin: 0;
@@ -21,4 +32,13 @@ body{
 
 .full{
     background-color: aquamarine
+}
+
+.btn-dark{
+    background-color: #252525;
+    color: white;
+}
+
+.littlefont{
+    font-size: 2vh;
 }
