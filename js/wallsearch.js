@@ -7,7 +7,7 @@ function search() {
     for (i = 0; i < HashtagSearch.length; i++) {
         var hashtagText = HashtagSearch[i].textContent;
         // console.log(hashtagText);
-        var parent = HashtagSearch[i].closest('#simplepost');
+        var parent = HashtagSearch[i].closest('.simplepost');
         console.log(parent);
         if (hashtagText.indexOf(searchValue) > -1) {
             parent.classList.remove("hidden-xs-up");

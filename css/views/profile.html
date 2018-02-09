@@ -54,10 +54,19 @@
   <!-- Termina barra de navegación -->
 
   <!-- Comienza contenido gral -->
-  <div class="container mt-3">
+  <div class="container-fluid no-gutters">
+        <div class="local-nav">
+            <img src="../../assets/images/Lannister.png" class="banner-local-nav pull-left" alt="">
+            <div class="containerbar p-2 ">
+                <a class="btn btn-lannister" href="wall.html"><i class="far fa-newspaper"></i></a>
+        </div>
+        </div>
+    </div>
+
+  <div class="container mt-5">
     <div class="row">
       <div class="col">
-          <img src="../../assets/images/dummy.png" class="user-local-nav p-1 w-30 center" id="user-picture" alt="">
+          <img src="../../assets/images/dummy.png" class="user-local-nav p-1 w-30  mt-5 mb-3" id="user-picture" alt="">
       </div>
     </div>
     <div class="row">
@@ -114,48 +123,49 @@
               </div>
 
               <div id="containerpost">
-                  <div class="card mb-3 mt-1s" id="simplepost">
-                      <div class="card-body nopadding p-3">
-                          <h6 class="card-title">
-                              <h5 class=" font-weight-bold mt-2  d-inline" id="user-name"></h5>Littlefinger:
-                              <span class="littlefont pull-right  mr-2 text-muted">Just now</span>
-                          </h6>
-                          <div id="post-description" class="comment mt-4">
-                              You can trust me :)
-                          </div>
-                          <div class="">
-                            <img src="../../assets/images/littlefinger-meme.jpg" alt="">
-                          </div>
-                          <output id="list" class="d-inline"></output>
-                          <span class=" text-muted littlefont">#</span>
-                          <span class=" text-muted littlefont hashtagsearch" id="hashtag-container">meme</span>
-                      </div>
-                      <div class="card-footer nopadding p-4 text-muted">
-                          <div class="like mb-3">
-                              <button class="btn btn-nobackground like">
-                                  <i class="far fa-thumbs-up cursor" aria-hidden="true"></i>
-                              </button>
-                              <button class="btn btn-nobackground love">
-                                  <i class="far fa-thumbs-down cursor" aria-hidden="true"></i>
-                              </button>
-                              <button class="btn btn-nobackground love">
-                                  <img src="../../assets/icon/raven.png" alt=""><span class="text-08">  Share, send a raven</span>
-                              </button>
-                          </div>
-                          <div id="comment-section-post">
-                              <div id="coment-user-post" class="comments p-2">
-                                  <span class=" font-weight-bold d-block littlefont">Chris says:</span>
-                                  <img src="assets/images/profilefriends.png" class=" littleprofile" alt="">
-                                  <span class="littlefont" id="comment-text-post">Trust no one</span>
-                              </div>
-                          </div>
-                          <div class="form-group mt-4">
-                              <label for="comment littlefont" class=" mb-2">Add a comment:</label>
-                              <textarea class="form-control" rows="1" id="card-comment-post"></textarea>
-                              <button class="btn btn-sm btn-dark mt-3" id="card-submitcomment-post" onclick="postear()">Post</button>
-                          </div>
-                      </div>
-                  </div>
+                    <div class="card mb-3 mt-1s simplepost" id="simplepost">
+                            <div class="card-body nopadding p-3">
+                                <h6 class="card-title">
+                                    <h5 class=" font-weight-bold mt-2  d-inline" id="user-name"></h5> 
+                                    <span class="littlefont pull-right  mr-2 text-muted">Just now</span>
+                                </h6>
+                                <div id="post-description" class="comment mt-4">
+                                    He's amazing!
+                                </div>
+                                <div class="">
+                                    <img src="../../assets/images/littlefinger-meme.jpg" alt="" class="picturepost  m-2 d-block mx-auto">
+                                </div>
+                                <output id="list" class="d-inline"></output>
+                                <span class=" text-muted littlefont">#</span>
+                                <span class=" text-muted littlefont hashtagsearch" id="hashtag-container">news</span>
+                            </div>
+                            <div class="card-footer nopadding p-4 text-muted">
+                                <div class="like mb-3">
+                                    <button class="btn btn-nobackground like">
+                                        <i class="far fa-thumbs-up cursor" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="btn btn-nobackground love">
+                                        <i class="far fa-thumbs-down cursor" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="btn btn-nobackground love">
+                                        <img src="../../assets/icon/raven.png" alt="">
+                                        <span class="text-08"> Share, send a raven</span>
+                                    </button>
+                                </div>
+                                <div id="comment-section-post">
+                                    <div id="coment-user-post" class="comments p-2">
+                                        <span class=" font-weight-bold d-block littlefont">Chris says:</span>
+                                        <span class="littlefont" id="comment-text-post">Trust no one</span>
+                                    </div>
+                                </div>
+                                <div class="form-group mt-4">
+                                    <label for="comment littlefont" class=" mb-2">Add a comment:</label>
+                                    <textarea class="form-control" rows="1" id="card-comment-post"></textarea>
+                                    <button class="btn btn-sm btn-dark mt-3" id="card-submitcomment-post" onclick="postear()">Post</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
 
               </div>
           </div>
@@ -177,12 +187,12 @@
             <div class="col"></div>
             <div class="col-3">
                 <span class="font-weight-bold d-block text-left mb-1 fs">MENU</span>
-                <a href="#" class="d-block text-left text-white mb-1 fs">Map</a>
-                <a href="css/views/houses.html" class="d-block text-left mb-1 text-white fs">Houses</a>
-                <a href="css/views/characters.html" class="d-block text-left mb-1 text-white fs">Characters</a>
-                <a href="css/views/shows.html" class="d-block text-left mb-1 text-white fs">Tv-Shows</a>
-                <a href="css/views/books.html" class="d-block text-left mb-1 text-white fs">Books</a>
-                <a href="css/views/books.html" class="d-block text-left mb-1 text-white fs">Search</a>
+                <a href="../../index.html" class="d-block text-left text-white mb-1 fs">Map</a>
+                <a href="houses.html" class="d-block text-left mb-1 text-white fs">Houses</a>
+                <a href="characters.html" class="d-block text-left mb-1 text-white fs">Characters</a>
+                <a href="shows.html" class="d-block text-left mb-1 text-white fs">Tv-Shows</a>
+                <a href="books.html" class="d-block text-left mb-1 text-white fs">Books</a>
+                <a href="#" class="d-block text-left mb-1 text-white fs">Search</a>
             </div>
             <div class="col-3">
                 <span class="font-weight-bold d-block text-left mb-1 fs">US</span>

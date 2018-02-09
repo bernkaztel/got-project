@@ -101,7 +101,7 @@ function showModal(event) {
                 var regionHouse = data.region;
                 var coatHouse = data.coatOfArms;
                 var titlesHouse = data.founder;
-                var descriptionHouse = "";
+                var descriptionHouse = "House Targaryen of Dragonstone is a Great House of Westeros and was the ruling royal House of the Seven Kingdoms for three centuries since it conquered and unified the realm, before it was deposed during Robert's Rebellion and House Baratheon replaced it as the new royal House. The few surviving Targaryens fled into exile to the Free Cities of Essos across the Narrow Sea. Currently based on Dragonstone off of the eastern coast of Westeros, House Targaryen seeks to retake the Seven Kingdoms from House Lannister, who formally replaced House Baratheon as the royal House following the destruction of the Great Sept of Baelor.";
                 // console.log(nameHouse);
                 // console.log(wordHouse);
                 // console.log(regionHouse);
