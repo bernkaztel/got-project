@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
     <link href="../style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="../profile.css">
+    <link rel="stylesheet" type="text/css" href="../profile2.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -56,7 +56,7 @@
   <!-- Comienza contenido gral -->
   <div class="container-fluid no-gutters">
         <div class="local-nav">
-            <img src="../../assets/images/Lannister.png" class="banner-local-nav pull-left" alt="">
+            <img src="../../assets/images/Tyrell.png" class="banner-local-nav pull-left" alt="">
             <div class="containerbar p-2 ">
                 <a class="btn btn-lannister" href="wall.html"><i class="far fa-newspaper"></i></a>
         </div>
@@ -71,7 +71,7 @@
     </div>
     <div class="row">
       <div class="col">
-        <h4 id="user-name2" class="text-center">Nombre</h4>
+        <h4 id="user-name2" class="text-center">Lia Laguna</h4>
       </div>
     </div>
   </div>
@@ -80,7 +80,8 @@
   <div class="container mx-auto mt-4">
     <div class="row">
       <div class="col-12">
-            <textarea type="text" cols="1" rows="1" id="searchHashtags" onkeyup="search()" placeholder="Search #hashtags..." class="w-100"></textarea>
+        <input type="text" id="searchHashtags" onkeyup="search()" placeholder="Search #hashtags..." class="w-100">
+      </div>
     </div>
   </div>
 
@@ -122,7 +123,7 @@
               </div>
 
               <div id="containerpost">
-                    <div class="card mb-3 mt-1s simplepost" id="simplepost2">
+                    <div class="card mb-3 mt-1s simplepost" id="simplepost">
                             <div class="card-body nopadding p-3">
                                 <h6 class="card-title">
                                     <h5 class=" font-weight-bold mt-2  d-inline" id="user-name"></h5> 
@@ -165,48 +166,7 @@
                             </div>
                         </div>
                 </div>
-                <div class="card mb-3 mt-1s simplepost" id="simplepost">
-                        <div class="card-body nopadding p-3">
-                            <h6 class="card-title">
-                                <h5 class=" font-weight-bold mt-2  d-inline" id="user-name">h</h5> says:
-                                <span class="littlefont pull-right  mr-2 text-muted">Just now</span>
-                            </h6>
-                            <div id="post-description" class="comment mt-4">
-                                You can trust everyone
-                            </div>
-                            <div class="">
-                                <img src="#" alt="" class="picturepost  m-2 d-block mx-auto">
-                            </div>
-                            <output id="list" class="d-inline"></output>
-                            <span class=" text-muted littlefont">#</span>
-                            <span class=" text-muted littlefont hashtagsearch" id="hashtag-container">meme</span>
-                        </div>
-                        <div class="card-footer nopadding p-4 text-muted">
-                            <div class="like mb-3">
-                                <button class="btn btn-nobackground like">
-                                    <i class="far fa-thumbs-up cursor" aria-hidden="true"></i>
-                                </button>
-                                <button class="btn btn-nobackground love">
-                                    <i class="far fa-thumbs-down cursor" aria-hidden="true"></i>
-                                </button>
-                                <button class="btn btn-nobackground love">
-                                    <img src="../../assets/icon/raven.png" alt="">
-                                    <span class="text-08"> Share, send a raven</span>
-                                </button>
-                            </div>
-                            <div id="comment-section-post">
-                                <div id="coment-user-post" class="comments p-2">
-                                    <span class=" font-weight-bold d-block littlefont">Chris says:</span>
-                                    <span class="littlefont" id="comment-text-post">Trust no one</span>
-                                </div>
-                            </div>
-                            <div class="form-group mt-4">
-                                <label for="comment littlefont" class=" mb-2">Add a comment:</label>
-                                <textarea class="form-control" rows="1" id="card-comment-post"></textarea>
-                                <button class="btn btn-sm btn-dark mt-3" id="card-submitcomment-post" onclick="postear()">Post</button>
-                            </div>
-                        </div>
-                    </div>
+
               </div>
           </div>
       </div>
@@ -263,8 +223,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
     <script src="../../js/app.js" charset="utf-8"></script>
-    <script src="../../js/profilesearch.js" charset="utf-8"></script>
-    <script src="../../js/profile.js"></script>
+    <script src="../../js/profile2.js"></script>
 </body>
 
 </html>
