@@ -41,16 +41,16 @@ Herramientas digitales de la organización: Google drive, GH.
 Hacer daily al inicio y final del día, para ver la actualización del tablero de Pendiente, En curso, Hecho.
 
 ### 6/02/18
-![Scrum1](assets/images/scrum1.JPG)
+![Scrum1](assets/images/scrum1.jpg)
 
 ### 7/02/18
 Inicio del día
-![Scrum2](assets/images/scrum2.JPG)
+![Scrum2](assets/images/scrum2.jpg)
 Final del día
-![Scrum3](assets/images/scrum3.JPG)
+![Scrum3](assets/images/scrum3.jpg)
 
 ### 8/02/18
 Inicio del día
-![Scrum4](assets/images/scrum4.JPG)
+![Scrum4](assets/images/scrum4.jpg)
 Final del día
-![Scrum5](assets/images/scrum5.JPG)
+![Scrum5](assets/images/scrum5.jpg)
