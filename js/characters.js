@@ -11,6 +11,11 @@ function showModal(event) {
     mymodal.modal('show');
 } 
 
+
+
+
+
+
 $(document).ready(function () {
 for ( i = 0; i < dataCh.length; i++) {
     var characterNumber = (dataCh[i].number);

@@ -22,29 +22,29 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <a href="#" class="text-white"><i class="fa fa-bars" aria-hidden="true"></i></a>
       </button>
-      <a class="navbar-brand" href="../../index.html">
+      <a class="navbar-brand" href="#">
           <img src="../../assets/images/got-logo.png" alt="Got logo" height="30">
       </a>
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                  <a class="nav-link text-white" href="../../index.html">Map</a>
+                  <a class="nav-link text-white" href="#">Map</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link text-white" href="houses.html">Houses</a>
+                  <a class="nav-link text-white" href="css/views/houses.html">Houses</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link text-white" href="characters.html">Characters</a>
+                  <a class="nav-link text-white" href="css/views/characters.html">Characters</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link text-white" href="books.html">Books</a>
+                  <a class="nav-link text-white" href="css/views/books.html">Books</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link text-white" href="shows.html">Tv-Shows</a>
+                  <a class="nav-link text-white" href="css/views/shows.html">Tv-Shows</a>
               </li>
           </ul>
           <span class="navbar-text">
-              <a class="text-white" href="log-in.html">
+              <a class="text-white" href="css/views/log-in.html">
                   <i class="fa fa-user-circle"></i>
                   Log-In</a>
           </span>
@@ -62,7 +62,7 @@
     </div>
 
     <!-- Search # -->
-    <div class="container mt-5em mx-auto">
+    <div class="container mt-5em">
       <div class="row">
         <div class="col-12">
           <input type="text" id="searchHashtags" onkeyup="search()" placeholder="Search #hashtags..." class="w-100">
@@ -152,6 +152,97 @@
                     </div>
 
                 </div>
+
+                <div id="containerpost">
+                    <div class="card mb-3 mt-1s" id="simplepost">
+                        <div class="card-body nopadding p-3">
+                            <h6 class="card-title">
+                                <h5 class=" font-weight-bold mt-2  d-inline" id="user-name"></h5>Targeryen:
+                                <span class="littlefont pull-right  mr-2 text-muted">Just now</span>
+                            </h6>
+                            <div id="post-description" class="comment mt-4">
+                                I liked! 
+                            </div>
+                            <div class="">
+                              <img src="../../assets/images/meme.jpg" alt="">
+                            </div>
+                            <output id="list" class="d-inline"></output>
+                            <span class=" text-muted littlefont">#</span>
+                            <span class=" text-muted littlefont hashtagsearch" id="hashtag-container">meme</span>
+                        </div>
+                        <div class="card-footer nopadding p-4 text-muted">
+                            <div class="like mb-3">
+                                <button class="btn btn-nobackground like">
+                                    <i class="far fa-thumbs-up cursor" aria-hidden="true"></i>
+                                </button>
+                                <button class="btn btn-nobackground love">
+                                    <i class="far fa-thumbs-down cursor" aria-hidden="true"></i>
+                                </button>
+                                <button class="btn btn-nobackground love">
+                                    <img src="../../assets/icon/raven.png" alt=""><span class="text-08">  Share, send a raven</span>
+                                </button>
+                            </div>
+                            <div id="comment-section-post">
+                                <div id="coment-user-post" class="comments p-2">
+                                    <span class=" font-weight-bold d-block littlefont">Robb says:</span>
+                                    <img src="assets/images/profilefriends.png" class=" littleprofile" alt="">
+                                    <span class="littlefont" id="comment-text-post">I drink and I know things </span>
+                                </div>
+                            </div>
+                            <div class="form-group mt-4">
+                                <label for="comment littlefont" class=" mb-2">Add a comment:</label>
+                                <textarea class="form-control" rows="1" id="card-comment-post"></textarea>
+                                <button class="btn btn-sm btn-dark mt-3" id="card-submitcomment-post" onclick="postear()">Post</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="containerpost">
+                    <div class="card mb-3 mt-1s" id="simplepost">
+                        <div class="card-body nopadding p-3">
+                            <h6 class="card-title">
+                                <h5 class=" font-weight-bold mt-2  d-inline" id="user-name"></h5>Tyrell:
+                                <span class="littlefont pull-right  mr-2 text-muted">Just now</span>
+                            </h6>
+                            <div id="post-description" class="comment mt-4">
+                                You know nothing, Jon Snow.
+                            </div>
+                            <div class="">
+                              <img src="../../assets/images/meme1.jpg" alt="">
+                            </div>
+                            <output id="list" class="d-inline"></output>
+                            <span class=" text-muted littlefont">#</span>
+                            <span class=" text-muted littlefont hashtagsearch" id="hashtag-container">meme</span>
+                        </div>
+                        <div class="card-footer nopadding p-4 text-muted">
+                            <div class="like mb-3">
+                                <button class="btn btn-nobackground like">
+                                    <i class="far fa-thumbs-up cursor" aria-hidden="true"></i>
+                                </button>
+                                <button class="btn btn-nobackground love">
+                                    <i class="far fa-thumbs-down cursor" aria-hidden="true"></i>
+                                </button>
+                                <button class="btn btn-nobackground love">
+                                    <img src="../../assets/icon/raven.png" alt=""><span class="text-08">  Share, send a raven</span>
+                                </button>
+                            </div>
+                            <div id="comment-section-post">
+                                <div id="coment-user-post" class="comments p-2">
+                                    <span class=" font-weight-bold d-block littlefont">Jon says:</span>
+                                    <img src="assets/images/profilefriends.png" class=" littleprofile" alt="">
+                                    <span class="littlefont" id="comment-text-post">Shame, Shame, Shame</span>
+                                </div>
+                            </div>
+                            <div class="form-group mt-4">
+                                <label for="comment littlefont" class=" mb-2">Add a comment:</label>
+                                <textarea class="form-control" rows="1" id="card-comment-post"></textarea>
+                                <button class="btn btn-sm btn-dark mt-3" id="card-submitcomment-post" onclick="postear()">Post</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
 
@@ -168,12 +259,12 @@
                 <div class="col"></div>
                 <div class="col-3">
                     <span class="font-weight-bold d-block text-left mb-1 fs">MENU</span>
-                    <a href="../../index.html" class="d-block text-left text-white mb-1 fs">Map</a>
-                    <a href="houses.html" class="d-block text-left mb-1 text-white fs">Houses</a>
-                    <a href="characters.html" class="d-block text-left mb-1 text-white fs">Characters</a>
-                    <a href="shows.html" class="d-block text-left mb-1 text-white fs">Tv-Shows</a>
-                    <a href="books.html" class="d-block text-left mb-1 text-white fs">Books</a>
-                    <a href="#" class="d-block text-left mb-1 text-white fs">Search</a>
+                    <a href="#" class="d-block text-left text-white mb-1 fs">Map</a>
+                    <a href="css/views/houses.html" class="d-block text-left mb-1 text-white fs">Houses</a>
+                    <a href="css/views/characters.html" class="d-block text-left mb-1 text-white fs">Characters</a>
+                    <a href="css/views/shows.html" class="d-block text-left mb-1 text-white fs">Tv-Shows</a>
+                    <a href="css/views/books.html" class="d-block text-left mb-1 text-white fs">Books</a>
+                    <a href="css/views/books.html" class="d-block text-left mb-1 text-white fs">Search</a>
                 </div>
                 <div class="col-3">
                     <span class="font-weight-bold d-block text-left mb-1 fs">US</span>

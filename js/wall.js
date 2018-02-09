@@ -17,17 +17,21 @@
          class: 'littlefont',
      });
      firstcontainer2.append(commentext);
+     $('#card-comment-post').val('');
  } //Final de funcion para postear comentario
 
  $(document).ready(function () {
 
+     getUserData();
      /*Función post "Comparte tus pensamientos"*/
      $('#bt-post').click(function () {
          $('#simplepost').clone().prependTo("#containerpost");
          $('#post-description').text(($('#comment').val()));
          $('#comment-section-post').html('');
+         $('#hashtag-container').text(($('#hashtag').val()));
          //Borrar campos
          $('#comment').val('');
+         $('#hashtag').val('');
      }); //Final de funcion para postear review
 
 
@@ -52,7 +56,18 @@
              })(f);
              reader.readAsDataURL(f);
          }
+     } //Final de función colocar imagen
+
+     function getUserData() {
+         var userName = localStorage.getItem("userNameL");
+         var userEmail = localStorage.getItem("userEmailL");
+         var userPicture = localStorage.getItem("userPictureL");
+         $('#user-name').html(userName);
+         $('#user-name2').html(userName);
+         $('#user-picture').attr('src', userPicture);
      }
+
+
 
      document.getElementById('bt-post').addEventListener('click', archivo, false);
  }); //final funcion ready

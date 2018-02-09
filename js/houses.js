@@ -13,21 +13,21 @@ function showModal(event) {
     mymodal.modal('show');
 }
 
-function search() {
-    var inputSearch = $('#searchHouses')[0];
-    var searchValue = inputSearch.value.toLowerCase();
-    var HousesSearch = document.getElementsByClassName("houseType");
-    for (i = 0; i < HousesSearch.length; i++) {
-        var houseId = HousesSearch[i].id;
-        element = document.getElementById(houseId);
-        if (houseId.indexOf(searchValue) > -1) {
-            element.style.display = "";
-        } else{
-            element.style.display ="none";
-        }
+// function search() {
+//     var inputSearch = $('#searchHouses')[0];
+//     var searchValue = inputSearch.value.toLowerCase();
+//     var HousesSearch = document.getElementsByClassName("houseType");
+//     for (i = 0; i < HousesSearch.length; i++) {
+//         var houseId = HousesSearch[i].id;
+//         element = document.getElementById(houseId);
+//         if (houseId.indexOf(searchValue) > -1) {
+//             console.log("concuerda" + houseId);
+//         } else{
+//             console.log(" no concuerda" + houseId);
+//         }
 
-    }
-}
+//     }
+// }
 
 
     $(document).ready(function () {

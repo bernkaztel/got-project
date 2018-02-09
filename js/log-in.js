@@ -20,7 +20,7 @@ function googleSignin() {
       localStorage.setItem("userEmailL", email);
       var photoURL = user.photoURL;
       localStorage.setItem("userPictureL", photoURL);
-      window.location.assign("wall.html");
+      window.location.assign("test.html");
       // console.log(user);
     }).catch(function (error) {
       //se manejan los erores aqui
