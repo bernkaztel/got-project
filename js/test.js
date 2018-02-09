@@ -10,7 +10,7 @@ function results () {
     var results ="";
     if(total <=  7) {
         var results = "myModalStark";
-    } else if (total > 7 && total <=  12) {
+    } else if (total > 2 && total <=  12) {
         var results = "myModalTargaryen";
     }else if (total > 12 && total <=  17) {
         var results = "myModalBaretheon";
